@@ -1,7 +1,45 @@
+*{padding:0;
+margin:0;
+box-sizing: border-box;
+}
+
 button {
   display: block;
 }
 
 input{
   display: block;
+}
+
+.hidden{
+  display: none;
+}
+
+.nav-header{
+  padding: 10px;
+}
+
+.nav-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+}
+
+.nav-nav  ul{
+  display:flex;
+  justify-content: space-around;
+  
+}
+.logo-container{
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links{
+  width: 80%;
+}
+
+.nav-nav  li {
+  list-style: none;
 }

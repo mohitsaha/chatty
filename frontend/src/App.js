@@ -1,11 +1,14 @@
 import './App.css';
-import './components/Login'
-import Login from './components/Login';
+import { NavBar } from './components/NavBar/NavBar';
+import './components/auth/Login'
+import Login from './components/auth/Login';
+import DropDown from './components/practise/DropDown';
 function App() {
   return (
     <div className="App">
-      <h1>Chat application</h1>
-      <Login></Login>
+       <NavBar/>
+       {/* <Login/> */}
+      {/* <DropDown></DropDown> */}
     </div>
   );
 }
