@@ -10,10 +10,10 @@ export const NavBar = () => {
                 </div>
                 <div className='nav-links'>
                     <ul>
-                        <li>features</li>
-                        <li>contributers</li>
-                        <li>login</li>
-                        <li>signup</li>
+                        <li>Features</li>
+                        <li>Contributers</li>
+                        <li>Login</li>
+                        <li>Signup</li>
                     </ul>
                 </div>
             </nav>

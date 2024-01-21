@@ -1,6 +1,7 @@
 *{padding:0;
 margin:0;
 box-sizing: border-box;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 button {
@@ -16,13 +17,15 @@ input{
 }
 
 .nav-header{
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 .nav-nav{
   display: flex;
   justify-content: space-between;
   align-items:center;
+  background-color: antiquewhite;
+  padding: 1% 0;
 }
 
 .nav-nav  ul{
@@ -42,4 +45,25 @@ input{
 
 .nav-nav  li {
   list-style: none;
+  font-weight: 500;
+}
+
+.home-group-message{
+  margin: 7%;
+    border: 1px solid;
+    border-radius:1%;
+    padding: 4%;
+  display:flex;
+  justify-content: space-around;
+}
+
+.home-group-message-headers{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.home-group-message-img{
+ width:100%;
 }
