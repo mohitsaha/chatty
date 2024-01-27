@@ -5,7 +5,7 @@ const Home = () => {
     <div>
         <div className='home-group-message'>
             <div className='home-group-message-headers'>
-             <h1 >Keep in touch with your groups</h1>
+             <h1 style={{fontSize:"x-large"}}>Keep in touch with your groups</h1>
                 <h5>From a group call to classmates to a quick call with mom, 
                     feel like you’re in the same room with voice and video calls.
                 </h5>
