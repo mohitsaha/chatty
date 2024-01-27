@@ -67,3 +67,10 @@ input{
 .home-group-message-img{
  width:100%;
 }
+
+.circle{
+  border: 1px solid black;
+  border-radius: 100px;
+  height: 100px;
+  width:100px;
+}
