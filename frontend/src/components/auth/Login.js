@@ -1,22 +1,32 @@
 import chattyLogo from "../../images/logo-no-background.png"
+import { Input } from '@chakra-ui/react'
+import {InputGroup} from '@chakra-ui/react'
+import {InputRightElement} from '@chakra-ui/react'
+import {Button} from '@chakra-ui/react'
 
-function Login() {
+import React from 'react'
+
+const Login = () => {
+    const [email, setEmail] = React.useState('')
+    const [show, setShow] = React.useState(false)
+    const handleChange = (event) => setEmail(event.target.value)
+    const handleShow = (event) => setShow((show)=>!show)
     return (
-        <div class="box">
-            <form>
-                <span class="text-center">login</span>
-                <div class="input-container">
-                    <input type="text" required="" />
-                    <label>Full Name</label>
-                </div>
-                <div class="input-container">
-                    <input type="mail" required="" />
-                    <label>Email</label>
-                </div>
-                <button type="button" class="btn">submit</button>
-            </form>
+        <div className='Login'>
+
+            <div className='login_content'>
+                <h1 className='login_content_h1'>
+                    Message <br></br> privately
+                </h1>
+                <p className='login_content_p'>
+                    Simple, reliable, private messaging and calling for free*, available all over the world.
+                </p>
+            </div>
+            <div className='login_form'>
+                
+            </div>
         </div>
-    );
+    )
 }
 
-export default Login;
+export default Login

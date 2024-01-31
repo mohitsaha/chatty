@@ -1,5 +1,6 @@
 import React from 'react'
 import logoImage from '../../images/logo-no-background.png'
+import { Link } from 'react-router-dom'
 export const NavBar = () => {
   return (
     <div>
@@ -10,10 +11,10 @@ export const NavBar = () => {
                 </div>
                 <div className='nav-links'>
                     <ul>
-                        <li>Features</li>
-                        <li>Contributers</li>
-                        <li>Login</li>
-                        <li>Signup</li>
+                        <Link  style={{ textDecoration: 'none' }} to="/features">Features</Link>
+                        <Link   style={{ textDecoration: 'none' }} to="/contributers">Contributers</Link>
+                        <Link  style={{ textDecoration: 'none' }} to="/login">Login</Link>
+                        <Link  style={{ textDecoration: 'none' }} to="/SignUp">SignUp</Link>
                     </ul>
                 </div>
             </nav>
