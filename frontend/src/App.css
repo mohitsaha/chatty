@@ -109,4 +109,47 @@ input{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  color:#ffffff;
+}
+
+.login_container{
+  border: 0.2rem solid rgb(255, 255, 255);
+  padding: 5rem 0 5rem 0;
+  border-radius: 1rem;
+}
+
+.form_login{
+  border: 2px solid white;
+  border-radius: 3px;
+  padding: 4rem 0;
+}
+.form_login input{
+  border:none;
+  outline:2px solid #ffffff;
+  border-radius:5px;
+  padding:20px;
+  margin: 10px;
+  width: 20rem;
+}
+
+.form_login button{
+  padding:10px;
+  margin: 10px;
+  width: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input::placeholder{
+}
+
+.form_login label{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:4rem;
+  font-size: 2rem;
+  font-weight:500;
 }
