@@ -73,4 +73,7 @@ const registerUser = asyncHandler (async(req,res)=>{
 });
 
 module.exports = {
-    registerUser};
+    registerUser,
+    allUsers,
+    authUser
+};
