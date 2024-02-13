@@ -2,7 +2,7 @@ import React from 'react'
 import {useState} from 'react';
 import {useEffect} from 'react';
 import axios from 'axios';
-
+import {ChatState} from '../../context/chatProvider'
 const Chats = () => {
     const[chats,setChats] = useState([]); 
     const fetchChats = async () =>{
@@ -12,6 +12,8 @@ const Chats = () => {
     useEffect(()=>{
         fetchChats();
     },[])
+
+    const { user } = ChatState();
   return (
     <div>
         {

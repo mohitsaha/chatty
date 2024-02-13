@@ -29,8 +29,8 @@ const Login = () => {
                         <div>
                             <form  className='form_login' onSubmit={handleLogin}>
                                 <label htmlFor='email' on>Login</label>
-                                <input type='email' placeholder='Email' onClick={handleEmail}/>
-                                <input type='password' placeholder='Password' onClick={handlePassword}/>
+                                <input type='email' placeholder='Email' onChange={handleEmail}/>
+                                <input type='password' placeholder='Password' onChange={handlePassword}/>
                                 <button>Submit</button>
                             </form>
                         </div>
