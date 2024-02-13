@@ -12,7 +12,7 @@ export const NavBar = () => {
                 <div className='nav-links'>
                     <ul>
                         <Link  style={{ textDecoration: 'none' }} to="/features">Features</Link>
-                        <Link   style={{ textDecoration: 'none' }} to="/contributers">Contributers</Link>
+                        <Link   style={{ textDecoration: 'none' }} to="/github">Github</Link>
                         <Link  style={{ textDecoration: 'none' }} to="/login">Login</Link>
                         <Link  style={{ textDecoration: 'none' }} to="/SignUp">SignUp</Link>
                     </ul>
