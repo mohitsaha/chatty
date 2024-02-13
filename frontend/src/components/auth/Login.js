@@ -1,7 +1,8 @@
 import { useState } from 'react';
-
+import {ChatState} from '../../context/chatProvider'
+import { useNavigate } from 'react-router-dom';
 import React from 'react'
-
+import axios from 'axios'
 const Login = () => {
     const [email, setEmail] = React.useState('')
     const [show, setShow] = React.useState(false)
@@ -9,10 +10,33 @@ const Login = () => {
     const handlePassword = (event) => setPassword(event.target.value)
     const handleShow = (event) => setShow((show) => !show)
     const [password, setPassword] = useState('');
-    const handleLogin = (event) => {
+    const {setUser} = ChatState;
+    const navigate = useNavigate();
+    const handleLogin = async (event) => {
         event.preventDefault();
         console.log('Username:', email);
         console.log('Password:', password);
+        //make a toast todo
+        if(!email || !password){
+            //make a toast
+            return;
+        }
+        try{
+            const config = {
+                headers:{
+                    "Content-type":"application/json",
+                },
+            };
+
+            const {data} = await axios.post(
+                "/api/user/login",
+                {email,password},
+                config
+            );
+            
+        }catch{
+
+        }
       };
     return (
         <div className='Login'>
